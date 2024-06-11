@@ -12,8 +12,9 @@ terraform {
 provider "aws" {
   profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
   #region  = "eu-west-1"
-   region  = "eu-west-1"
-
+   #region  = "eu-west-1"
+   #changes by headless state
+   region = "eu-west-1"
 }
 
 # Resource Block
