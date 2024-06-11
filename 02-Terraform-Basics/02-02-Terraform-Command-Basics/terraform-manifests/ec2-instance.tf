@@ -14,7 +14,7 @@ provider "aws" {
   #region  = "eu-west-1"
    #region  = "eu-west-1"
    changes by headless state
-   region = "eu-west-1"
+   #region = "eu-west-1"
 }
 
 # Resource Block
