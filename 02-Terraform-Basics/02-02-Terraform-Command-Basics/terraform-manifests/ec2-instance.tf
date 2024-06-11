@@ -16,6 +16,7 @@ provider "aws" {
    #changes by headless state
    region = "eu-west-1"
    #added after local user setup
+   #adder after global config
 }
 
 ######### Resource Block
