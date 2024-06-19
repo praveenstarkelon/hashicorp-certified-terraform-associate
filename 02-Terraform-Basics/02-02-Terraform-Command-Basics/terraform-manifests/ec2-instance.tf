@@ -20,7 +20,13 @@ provider "aws" {
 resource "aws_instance" "ec2demo" {
   ami           = "ami-0776c814353b4814d" # Amazon Linux in us-east-1, update as per your region
   instance_type = "t2.micro"
+   # Add a block device to increase storage to 30 GB
+  root_block_device {
+    volume_size = 10
+  }
 tags = {
     Name = "NewServerName"
   }
 }
+
+
